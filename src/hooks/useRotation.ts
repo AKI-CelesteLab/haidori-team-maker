@@ -283,8 +283,6 @@ export const useRotation = () => {
       setIsFirstServe(e.target.checked);
       setIsServe(e.target.checked);
 
-      console.log(e.target.checked);
-
       if (!e.target.checked) return;
 
       setMembers((prev) => {

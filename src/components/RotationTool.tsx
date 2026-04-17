@@ -28,7 +28,7 @@ export default function RotationTool() {
 
   return (
     <div className="flex flex-col xl:flex-row items-center xl:items-start gap-6">
-      <div className="lg:max-w-1/2">
+      <div className="xl:max-w-1/2">
         {/* 操作ボタン */}
         <>
           <div className="flex justify-around items-center bg-gray-100 p-4">
