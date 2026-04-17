@@ -1,4 +1,3 @@
-import {useRotation} from "@/hooks/useRotation";
 import {PlayerData} from "@/types/PlayerData";
 import Image from "next/image";
 
