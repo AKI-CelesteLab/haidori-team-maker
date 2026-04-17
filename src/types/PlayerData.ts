@@ -1,6 +1,6 @@
-import { StaticImageData } from "next/image";
+import {StaticImageData} from "next/image";
 
-const categoryList = ["ユニフォーム"] as const;
+const categoryList = ["ユニフォーム", "妖", "3周年", "格ゲー"] as const;
 type Category = (typeof categoryList)[number];
 
 const schoolList = [
