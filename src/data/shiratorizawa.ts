@@ -1,5 +1,5 @@
-import ushijima_wakatoshi_3rd_img from "@/assets/[3周年]牛島若利.png";
-import shirabu_kenjirou_3rd_img from "@/assets/[3周年]白布賢二郎.png";
+import ushijima_wakatoshi_3rd_img from "@/assets/白鳥沢/[3周年]牛島若利.png";
+import shirabu_kenjirou_3rd_img from "@/assets/白鳥沢/[3周年]白布賢二郎.png";
 
 import {PlayerData} from "@/types/PlayerData";
 

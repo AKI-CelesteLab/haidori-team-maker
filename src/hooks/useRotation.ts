@@ -1,129 +1,138 @@
-import akaashi_keigi_3rd_img from "@/assets/[3周年]赤葦京治.png";
-import akaashi_keigi_ayakashi_img from "@/assets/[妖]赤葦京治.png";
-import bokuto_koutarou_3rd_img from "@/assets/[3周年]木兎光太郎.png";
-import bokuto_koutarou_uniform_img from "@/assets/木兎光太郎.png";
-import komi_haruki_uniform_img from "@/assets/小見春樹.png";
-import washio_tatsuki_uniform_img from "@/assets/鷲尾辰生.png";
-import shimizu_kiyoko_kakutougame_img from "@/assets/[格ゲー]清水潔子.png";
-import yachi_hitoka_kakutougame_img from "@/assets/[格ゲー]谷地仁花.png";
-import kuroo_tetsurou_uniform_img from "@/assets/黒尾鉄朗.png";
-import ushijima_wakatoshi_3rd_img from "@/assets/[3周年]牛島若利.png";
-import shirabu_kenjirou_3rd_img from "@/assets/[3周年]白布賢二郎.png";
-import hoshiumi_kourai_kakutougame_img from "@/assets/[格ゲー]星海光来.png";
+import hinata_shouyou_iconic_img from "@/assets/烏野/[アイコニック]日向翔陽.png";
+import kageyama_tobio_iconic_img from "@/assets/烏野/[アイコニック]影山飛雄.png";
+import tsukishima_kei_iconic_img from "@/assets/烏野/[アイコニック]月島蛍.png";
+import yamaguchi_tadashi_iconic_img from "@/assets/烏野/[アイコニック]山口忠.png";
+import nishinoya_yu_iconic_img from "@/assets/烏野/[アイコニック]西谷夕.png";
+import tanaka_ryunosuke_iconic_img from "@/assets/烏野/[アイコニック]田中龍之介.png";
+import sawamura_daichi_iconic_img from "@/assets/烏野/[アイコニック]澤村大地.png";
+import sugawara_koushi_iconic_img from "@/assets/烏野/[アイコニック]菅原孝支.png";
+import azumane_asahi_iconic_img from "@/assets/烏野/[アイコニック]東峰旭.png";
+import ennoshita_chikara_iconic_img from "@/assets/烏野/[アイコニック]縁下力.png";
+import kinoshita_hisashi_iconic_img from "@/assets/烏野/[アイコニック]木下久志.png";
+import narita_kazuhito_iconic_img from "@/assets/烏野/[アイコニック]成田一仁.png";
 
 import {PlayerData} from "@/types/PlayerData";
 import {useState, useCallback} from "react";
+import {PLAYER_LIST} from "@/data";
 
 const initialMembers: PlayerData[] = [
   {
-    name: "【妖】赤葦京治",
-    category: "妖",
-    school: "梟谷学園高校",
-    position: "S",
+    name: "澤村大地",
+    category: "ユニフォーム",
+    school: "烏野高校",
+    position: "WS",
     type: "チョキ",
-    class: "スーパーアイコニック",
-    image: akaashi_keigi_ayakashi_img,
+    class: "アイコニック",
+    image: sawamura_daichi_iconic_img,
   },
   {
-    name: "小見春樹",
+    name: "東峰旭",
     category: "ユニフォーム",
-    school: "梟谷学園高校",
+    school: "烏野高校",
+    position: "WS",
+    type: "チョキ",
+    class: "アイコニック",
+    image: azumane_asahi_iconic_img,
+  },
+  {
+    name: "月島蛍",
+    category: "ユニフォーム",
+    school: "烏野高校",
+    position: "MB",
+    type: "チョキ",
+    class: "アイコニック",
+    image: tsukishima_kei_iconic_img,
+  },
+  {
+    name: "影山飛雄",
+    category: "ユニフォーム",
+    school: "烏野高校",
+    position: "S",
+    type: "チョキ",
+    class: "アイコニック",
+    image: kageyama_tobio_iconic_img,
+  },
+  {
+    name: "田中龍之介",
+    category: "ユニフォーム",
+    school: "烏野高校",
+    position: "WS",
+    type: "パー",
+    class: "アイコニック",
+    image: tanaka_ryunosuke_iconic_img,
+  },
+  {
+    name: "日向翔陽",
+    category: "ユニフォーム",
+    school: "烏野高校",
+    position: "MB",
+    type: "チョキ",
+    class: "アイコニック",
+    image: hinata_shouyou_iconic_img,
+  },
+  {
+    name: "西谷夕",
+    category: "ユニフォーム",
+    school: "烏野高校",
     position: "Li",
-    type: "パー",
-    class: "アイコニック",
-    image: komi_haruki_uniform_img,
-  },
-  {
-    name: "【3周年】赤葦京治",
-    category: "3周年",
-    school: "梟谷学園高校",
-    position: "S",
     type: "チョキ",
     class: "アイコニック",
-    image: akaashi_keigi_3rd_img,
+    image: nishinoya_yu_iconic_img,
   },
   {
-    name: "木兎光太郎",
+    name: "山口忠",
     category: "ユニフォーム",
-    school: "梟谷学園高校",
-    position: "WS",
-    type: "パー",
-    class: "アイコニック",
-    image: bokuto_koutarou_uniform_img,
-  },
-  {
-    name: "鷲尾辰生",
-    category: "ユニフォーム",
-    school: "梟谷学園高校",
-    position: "MB",
-    type: "パー",
-    class: "アイコニック",
-    image: washio_tatsuki_uniform_img,
-  },
-  {
-    name: "【3周年】木兎光太郎",
-    category: "3周年",
-    school: "梟谷学園高校",
-    position: "WS",
-    type: "チョキ",
-    class: "アイコニック",
-    image: bokuto_koutarou_3rd_img,
-  },
-  {
-    name: "【格ゲー】谷地仁花",
-    category: "格ゲー",
     school: "烏野高校",
     position: "MB",
-    type: "グー",
+    type: "パー",
     class: "アイコニック",
-    image: yachi_hitoka_kakutougame_img,
+    image: yamaguchi_tadashi_iconic_img,
   },
   {
-    name: "【3周年】牛島若利",
-    category: "3周年",
-    school: "白鳥沢学園高校",
-    position: "WS",
-    type: "チョキ",
-    class: "アイコニック",
-    image: ushijima_wakatoshi_3rd_img,
-  },
-  {
-    name: "【格ゲー】清水潔子",
-    category: "格ゲー",
+    name: "菅原孝支",
+    category: "ユニフォーム",
     school: "烏野高校",
     position: "S",
-    type: "グー",
+    type: "パー",
     class: "アイコニック",
-    image: shimizu_kiyoko_kakutougame_img,
+    image: sugawara_koushi_iconic_img,
   },
   {
-    name: "【格ゲー】星海光来",
-    category: "格ゲー",
-    school: "鴎台高校",
+    name: "縁下力",
+    category: "ユニフォーム",
+    school: "烏野高校",
     position: "WS",
     type: "パー",
     class: "アイコニック",
-    image: hoshiumi_kourai_kakutougame_img,
+    image: ennoshita_chikara_iconic_img,
   },
+  // 木下久志
   {
-    name: "【3周年】白布賢二郎",
-    category: "3周年",
-    school: "白鳥沢学園高校",
-    position: "S",
-    type: "グー",
-    class: "アイコニック",
-    image: shirabu_kenjirou_3rd_img,
-  },
-  {
-    name: "黒尾鉄朗",
+    name: "木下久志",
     category: "ユニフォーム",
-    school: "音駒高校",
-    position: "MB",
-    type: "グー",
+    school: "烏野高校",
+    position: "WS",
+    type: "パー",
     class: "アイコニック",
-    image: kuroo_tetsurou_uniform_img,
+    image: kinoshita_hisashi_iconic_img,
+  },
+  // 成田一仁
+  {
+    name: "成田一仁",
+    category: "ユニフォーム",
+    school: "烏野高校",
+    position: "MB",
+    type: "パー",
+    class: "アイコニック",
+    image: narita_kazuhito_iconic_img,
   },
 ];
+
+// 選択状態の型定義
+type Selection =
+  | {type: "member"; index: number}
+  | {type: "all"; data: PlayerData}
+  | null;
 
 export const useRotation = () => {
   /*
@@ -137,46 +146,136 @@ export const useRotation = () => {
     members[2] = serve
   */
 
-  const [members, setMembers] = useState<PlayerData[]>(initialMembers);
+  const [team, setTeam] = useState<PlayerData[]>(initialMembers);
+  const [members, setMembers] = useState<PlayerData[]>(team);
+  const allPlayers = PLAYER_LIST.filter(
+    (p) => members.findIndex((m) => m.name === p.name) < 0,
+  );
   const [isFirstServe, setIsFirstServe] = useState(false);
   const [isServe, setIsServe] = useState(isFirstServe);
   // 最初のローテションかの確認用
   const [counter, setCounter] = useState(0);
-  // 選択中のインデックスを管理
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [selection, setSelection] = useState<Selection>(null);
 
-  // 2つのインデックスを指定して入れ替える関数
-  const swapPlayers = useCallback((idx1: number, idx2: number) => {
-    setMembers((prev) => {
-      const next = [...prev];
-      const temp = next[idx1];
-      next[idx1] = next[idx2];
-      next[idx2] = temp;
-      return next;
-    });
-    setSelectedIndex(null); // 入れ替え後に選択解除
-  }, []);
+  // チームを確定
+  const confirmTeam = useCallback(() => {
+    setTeam(members);
+  }, [members]);
 
-  const changePlayer = useCallback((index: number, player: PlayerData) => {
-    setMembers((prev) => {
-      const next = [...prev];
-      next[index] = player;
-      return next;
-    });
-  }, []);
+  // リセット
+  const reset = useCallback(() => {
+    setMembers(team);
+    setIsFirstServe(false);
+    setIsServe(false);
+    setCounter(0);
+    setSelection(null);
+  }, [team]);
 
-  // 選手がタップされた時のハンドラー
+  // プレイヤー入れ替えの共通処理（一覧からの流し込み）
+  const executeReplace = useCallback(
+    (memberIdx: number, newPlayer: PlayerData) => {
+      // 1. フロント（3-5）へのリベロ配置制限
+      if (memberIdx >= 3 && memberIdx <= 5 && newPlayer.position === "Li") {
+        alert("リベロは前衛（フロント）に入ることはできません。");
+        setSelection(null);
+        return;
+      }
+
+      // 2. リベロの重複編成制限
+      if (newPlayer.position === "Li") {
+        const isLiAlreadyExists = members.some(
+          (m, idx) => m.position === "Li" && idx !== memberIdx,
+        );
+        if (isLiAlreadyExists) {
+          alert("リベロは1人しか編成できません。");
+          setSelection(null);
+          return;
+        }
+      }
+
+      setMembers((prev) => {
+        const next = [...prev];
+        next[memberIdx] = newPlayer;
+        return next;
+      });
+      setSelection(null);
+    },
+    [members], // membersに依存するため追加
+  );
+
+  // members内での入れ替え処理
+  const executeSwap = useCallback(
+    (idx1: number, idx2: number) => {
+      // 1. まず現在のメンバーから入れ替え対象のプレイヤーを特定（setMembersの外で行う）
+      const p1 = members[idx1];
+      const p2 = members[idx2];
+
+      // 2. フロント（3-5）へのリベロ移動制限のバリデーション
+      const isP1GoingToFront = idx2 >= 3 && idx2 <= 5;
+      const isP2GoingToFront = idx1 >= 3 && idx1 <= 5;
+
+      if (
+        (isP1GoingToFront && p1.position === "Li") ||
+        (isP2GoingToFront && p2.position === "Li")
+      ) {
+        alert("リベロは前衛（フロント）に入ることはできません。");
+        setSelection(null); // 選択状態は解除
+        return; // ここで終了し、setMembersを呼ばない
+      }
+
+      // 3. バリデーションを通過した場合のみStateを更新
+      setMembers((prev) => {
+        const next = [...prev];
+        const temp = next[idx1];
+        next[idx1] = next[idx2];
+        next[idx2] = temp;
+        return next;
+      });
+      setSelection(null);
+    },
+    [members],
+  );
+
+  // members（コート・ベンチ）がタップされた時
   const handlePlayerClick = useCallback(
     (index: number) => {
-      if (selectedIndex === null) {
-        setSelectedIndex(index);
-      } else if (selectedIndex === index) {
-        setSelectedIndex(null); // 同じ選手をタップしたら解除
-      } else {
-        swapPlayers(selectedIndex, index);
+      if (!selection) {
+        setSelection({type: "member", index});
+        return;
+      }
+
+      if (selection.type === "member") {
+        if (selection.index === index) {
+          setSelection(null); // 同じなら解除
+        } else {
+          executeSwap(selection.index, index); // members同士の入れ替え
+        }
+      } else if (selection.type === "all") {
+        executeReplace(index, selection.data); // all -> members の流し込み
       }
     },
-    [selectedIndex, swapPlayers],
+    [selection, executeSwap, executeReplace],
+  );
+
+  // allPlayers（一覧）がタップされた時
+  const handleAllPlayerClick = useCallback(
+    (data: PlayerData) => {
+      if (!selection) {
+        setSelection({type: "all", data});
+        return;
+      }
+
+      if (selection.type === "all") {
+        if (selection.data.name === data.name) {
+          setSelection(null); // 同じなら解除
+        } else {
+          setSelection({type: "all", data}); // 選択対象を上書き
+        }
+      } else if (selection.type === "member") {
+        executeReplace(selection.index, data); // members -> all (正確にはmember枠にallを上書き)
+      }
+    },
+    [selection, executeReplace],
   );
 
   const changeFirstServe = useCallback(
@@ -222,12 +321,10 @@ export const useRotation = () => {
     // サーブ・レシーブを切り替える
     setIsServe(nextIsServe);
 
-    const nextCounter = counter + 1;
-    setCounter(nextCounter);
-
     // サーブの時にローテーション
     if (nextIsServe) {
-      if (nextCounter !== 0) rotate();
+      if (counter !== 0) rotate();
+      setCounter((prev) => prev + 1);
     } else {
       setMembers((prev) => {
         const next = [...prev];
@@ -246,12 +343,19 @@ export const useRotation = () => {
 
   return {
     members,
+    allPlayers,
+    // 既存のselectedIndexを使っている箇所との互換性のため
+    selectedIndex: selection?.type === "member" ? selection.index : null,
+    // allが選択されているかどうかの状態も必要であれば追加
+    selectedAllName: selection?.type === "all" ? selection.data.name : null,
     isServe,
     isFirstServe,
-    selectedIndex,
+    confirmTeam,
+    reset,
     changeFirstServe,
     nextRotate,
     handlePlayerClick,
+    handleAllPlayerClick,
     court: {
       back: [members[2], members[1], members[0]], // 4, 5, 6
       front: members.slice(3, 6), // 3, 2, 1

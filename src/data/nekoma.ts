@@ -1,4 +1,4 @@
-import kuroo_tetsurou_uniform_img from "@/assets/黒尾鉄朗.png";
+import kuroo_tetsurou_iconic_img from "@/assets/音駒/[アイコニック]黒尾鉄朗.png";
 
 import {PlayerData} from "@/types/PlayerData";
 
@@ -10,6 +10,6 @@ export const nekoma: PlayerData[] = [
     position: "MB",
     type: "グー",
     class: "アイコニック",
-    image: kuroo_tetsurou_uniform_img,
+    image: kuroo_tetsurou_iconic_img,
   },
 ];

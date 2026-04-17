@@ -45,11 +45,11 @@ const classList = [
 type Class = (typeof classList)[number];
 
 export type PlayerData = {
-  name: string | null;
-  category: Category | null;
-  school: School | null;
-  position: Position | null;
-  type: Type | null;
-  class: Class | null;
-  image: StaticImageData | null;
+  name: string;
+  category: Category;
+  school: School;
+  position: Position;
+  type: Type;
+  class: Class;
+  image: StaticImageData;
 };

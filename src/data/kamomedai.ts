@@ -1,4 +1,4 @@
-import hoshiumi_kourai_kakutougame_img from "@/assets/[格ゲー]星海光来.png";
+import hoshiumi_kourai_kakutougame_img from "@/assets/鴎台/[格ゲー]星海光来.png";
 
 import {PlayerData} from "@/types/PlayerData";
 

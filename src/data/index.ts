@@ -1,5 +1,5 @@
 import {PlayerData} from "@/types/PlayerData";
-import {karasuno} from "./Karasuno";
+import {karasuno} from "./karasuno";
 import {nekoma} from "./nekoma";
 import {shiratorizawa} from "./shiratorizawa";
 import {fukuroudani} from "./fukuroudani";
