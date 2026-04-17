@@ -321,6 +321,17 @@ export const useRotation = () => {
 
     // サーブの時にローテーション
     if (nextIsServe) {
+      if (counter === 0 && members[2].position === "Li") {
+        setMembers((prev) => {
+          const next = [...prev];
+          const temp = next[2];
+          next[2] = next[6];
+          next[6] = temp;
+          const target = next.splice(6, 1)[0];
+          next.push(target);
+          return next;
+        });
+      }
       if (counter !== 0) rotate();
       setCounter((prev) => prev + 1);
     } else {
@@ -337,7 +348,7 @@ export const useRotation = () => {
         return next;
       });
     }
-  }, [isServe, counter, rotate]);
+  }, [members, isServe, counter, rotate]);
 
   return {
     members,
