@@ -79,10 +79,10 @@ export {default as sugawara_xmas2} from "@/assets/KARASUNO/sugawara_koushi_xmas2
 export {default as sugawara_summerfestival2} from "@/assets/KARASUNO/sugawara_koushi_summerfestival2.png";
 
 // 東峰旭
-export {default as azumane} from "@/assets/KARASUNO/azumane_asashi.png";
-export {default as azumane_poolcleaning} from "@/assets/KARASUNO/azumane_asashi_poolcleaning.png";
-export {default as azumane_survivalgame} from "@/assets/KARASUNO/azumane_asashi_survivalgame.png";
-export {default as azumane_summerfestival2} from "@/assets/KARASUNO/azumane_asashi_summerfestival2.png";
+export {default as azumane} from "@/assets/KARASUNO/azumane_asahi.png";
+export {default as azumane_poolcleaning} from "@/assets/KARASUNO/azumane_asahi_poolcleaning.png";
+export {default as azumane_survivalgame} from "@/assets/KARASUNO/azumane_asahi_survivalgame.png";
+export {default as azumane_summerfestival2} from "@/assets/KARASUNO/azumane_asahi_summerfestival2.png";
 export {default as azumane_wasoutaiken} from "@/assets/KARASUNO/azumane_asahi_wasoutaiken.png";
 
 // 縁下力
