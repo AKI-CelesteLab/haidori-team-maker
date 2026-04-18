@@ -30,7 +30,7 @@ export default function AllPlayer({
         <h3 className="text-sm font-bold">未配置の選手（{players.length}）</h3>
         <button
           onClick={() => setIsModalOpen(true)}
-          className={`text-lg font-bold text-center px-4 py-1 rounded-full border ${
+          className={`text-base font-bold text-center px-4 py-1 rounded-full border ${
             activeCount > 0
               ? "bg-orange-500 text-white border-orange-600"
               : "bg-white border-gray-300"
