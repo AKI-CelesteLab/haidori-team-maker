@@ -1,4 +1,4 @@
-import hoshiumi_kourai_kakutougame_img from "@/assets/鴎台/[格ゲー]星海光来.png";
+import hoshiumi_kourai_fightinggame_img from "@/assets/鴎台/[格ゲー]星海光来.png";
 
 import {PlayerData} from "@/types/PlayerData";
 
@@ -10,6 +10,6 @@ export const kamomedai: PlayerData[] = [
     position: "WS",
     type: "パー",
     class: "アイコニック",
-    image: hoshiumi_kourai_kakutougame_img,
+    image: hoshiumi_kourai_fightinggame_img,
   },
 ];

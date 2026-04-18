@@ -35,8 +35,12 @@ export const useRotation = () => {
   // フィルタリングされたプレイヤー一覧
   const allPlayers = useMemo(() => {
     return PLAYER_LIST.filter((p) => {
-      // 既にメンバーにいる場合は除外
-      if (members.findIndex((m) => m.name === p.name) >= 0) return false;
+      // 「名前かつクラス」が完全に一致する個体がメンバーにいる場合のみ、一覧から消す
+      // これにより、別クラスの同名キャラは一覧に残り続けます
+      const isExactlySamePresent = members.some(
+        (m) => m.name === p.name && m.class === p.class,
+      );
+      if (isExactlySamePresent) return false;
 
       // 各フィルタ条件（選択されている場合のみチェック）
       const matchCategory =
@@ -112,6 +116,21 @@ export const useRotation = () => {
           setSelection(null);
           return;
         }
+      }
+
+      // バリデーション: 同名キャラの重複
+      // 「操作しようとしているスロット(memberIdx)以外」に、同じ名前のキャラがいるかチェック
+      const isNameDuplicateElsewhere = members.some(
+        (m, idx) => m.name === newPlayer.name && idx !== memberIdx,
+      );
+
+      // 同名キャラの重複制限
+      if (isNameDuplicateElsewhere) {
+        alert(
+          `「${newPlayer.name}」は既に他の枠に編成されています。1つのチームに同名キャラは1人までです。`,
+        );
+        setSelection(null);
+        return;
       }
 
       setMembers((prev) => {

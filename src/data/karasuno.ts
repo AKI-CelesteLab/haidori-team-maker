@@ -1,4 +1,17 @@
+// 日向翔陽
 import hinata_shouyou_iconic_img from "@/assets/烏野/日向翔陽.png";
+import hinata_shouyou_uniform_img from "@/assets/烏野/[制服]日向翔陽.png";
+import hinata_shouyou_summerfestival_img from "@/assets/烏野/[夏祭り]日向翔陽.png";
+import hinata_shouyou_1st_img from "@/assets/烏野/[１周年]日向翔陽.png";
+import hinata_shouyou_crown_img from "@/assets/烏野/[王冠]日向翔陽.png";
+import hinata_shouyou_jersey_img from "@/assets/烏野/[ジャージ]日向翔陽.png";
+import hinata_shouyou_amusementpark_img from "@/assets/烏野/[遊園地]日向翔陽.png";
+import hinata_shouyou_halloween_img from "@/assets/烏野/[ハロウィン]日向翔陽.png";
+import hinata_shouyou_wasoutaiken_img from "@/assets/烏野/[和装体験]日向翔陽.png";
+import hinata_shouyou_fightinggame_img from "@/assets/烏野/[格ゲー]日向翔陽.png";
+import hinata_shouyou_supericonic_img from "@/assets/烏野/日向翔陽_スーパーアイコニック.png";
+import hinata_shouyou_crown_supericonic_img from "@/assets/烏野/[王冠]日向翔陽_スーパーアイコニック.png";
+// 影山飛雄
 import kageyama_tobio_iconic_img from "@/assets/烏野/影山飛雄.png";
 import tsukishima_kei_iconic_img from "@/assets/烏野/月島蛍.png";
 import yamaguchi_tadashi_iconic_img from "@/assets/烏野/山口忠.png";
@@ -10,8 +23,8 @@ import azumane_asahi_iconic_img from "@/assets/烏野/東峰旭.png";
 import ennoshita_chikara_iconic_img from "@/assets/烏野/縁下力.png";
 import kinoshita_hisashi_iconic_img from "@/assets/烏野/木下久志.png";
 import narita_kazuhito_iconic_img from "@/assets/烏野/成田一仁.png";
-import shimizu_kiyoko_kakutougame_img from "@/assets/烏野/[格ゲー]清水潔子.png";
-import yachi_hitoka_kakutougame_img from "@/assets/烏野/[格ゲー]谷地仁花.png";
+import shimizu_kiyoko_fightinggame_img from "@/assets/烏野/[格ゲー]清水潔子.png";
+import yachi_hitoka_fightinggame_img from "@/assets/烏野/[格ゲー]谷地仁花.png";
 import {PlayerData} from "@/types/PlayerData";
 
 export const karasuno: PlayerData[] = [
@@ -25,6 +38,106 @@ export const karasuno: PlayerData[] = [
     class: "アイコニック",
     image: hinata_shouyou_iconic_img,
   },
+  {
+    name: "【制服】日向翔陽",
+    category: "制服",
+    school: "烏野高校",
+    position: "MB",
+    type: "チョキ",
+    class: "アイコニック",
+    image: hinata_shouyou_uniform_img,
+  },
+  {
+    name: "【夏祭り】日向翔陽",
+    category: "夏祭り",
+    school: "烏野高校",
+    position: "MB",
+    type: "グー",
+    class: "アイコニック",
+    image: hinata_shouyou_summerfestival_img,
+  },
+  {
+    name: "【１周年】日向翔陽",
+    category: "１周年",
+    school: "烏野高校",
+    position: "MB",
+    type: "パー",
+    class: "アイコニック",
+    image: hinata_shouyou_1st_img,
+  },
+  {
+    name: "【王冠】日向翔陽",
+    category: "王冠",
+    school: "烏野高校",
+    position: "MB",
+    type: "チョキ",
+    class: "アイコニック",
+    image: hinata_shouyou_crown_img,
+  },
+  {
+    name: "【ジャージ】日向翔陽",
+    category: "ジャージ",
+    school: "烏野高校",
+    position: "MB",
+    type: "グー",
+    class: "アイコニック",
+    image: hinata_shouyou_jersey_img,
+  },
+  {
+    name: "【遊園地】日向翔陽",
+    category: "遊園地",
+    school: "烏野高校",
+    position: "MB",
+    type: "パー",
+    class: "アイコニック",
+    image: hinata_shouyou_amusementpark_img,
+  },
+  {
+    name: "【ハロウィン】日向翔陽",
+    category: "ハロウィン",
+    school: "烏野高校",
+    position: "MB",
+    type: "チョキ",
+    class: "アイコニック",
+    image: hinata_shouyou_halloween_img,
+  },
+  {
+    name: "【和装体験】日向翔陽",
+    category: "和装体験",
+    school: "烏野高校",
+    position: "MB",
+    type: "グー",
+    class: "アイコニック",
+    image: hinata_shouyou_wasoutaiken_img,
+  },
+  {
+    name: "【格ゲー】日向翔陽",
+    category: "格ゲー",
+    school: "烏野高校",
+    position: "MB",
+    type: "パー",
+    class: "アイコニック",
+    image: hinata_shouyou_fightinggame_img,
+  },
+  {
+    name: "日向翔陽",
+    category: "ユニフォーム",
+    school: "烏野高校",
+    position: "MB",
+    type: "チョキ",
+    class: "スーパーアイコニック",
+    image: hinata_shouyou_supericonic_img,
+  },
+  {
+    name: "【王冠】日向翔陽",
+    category: "王冠",
+    school: "烏野高校",
+    position: "MB",
+    type: "チョキ",
+    class: "スーパーアイコニック",
+    image: hinata_shouyou_crown_supericonic_img,
+  },
+
   // 影山飛雄
   {
     name: "影山飛雄",
@@ -142,7 +255,7 @@ export const karasuno: PlayerData[] = [
     position: "S",
     type: "グー",
     class: "アイコニック",
-    image: shimizu_kiyoko_kakutougame_img,
+    image: shimizu_kiyoko_fightinggame_img,
   },
   {
     name: "【格ゲー】谷地仁花",
@@ -151,6 +264,6 @@ export const karasuno: PlayerData[] = [
     position: "MB",
     type: "グー",
     class: "アイコニック",
-    image: yachi_hitoka_kakutougame_img,
+    image: yachi_hitoka_fightinggame_img,
   },
 ];

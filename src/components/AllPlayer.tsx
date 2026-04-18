@@ -55,7 +55,7 @@ export default function AllPlayer({
           const isSelected = selectedName === player.name;
           return (
             <div
-              key={player.name}
+              key={player.name + player.class}
               className={`cursor-pointer w-full max-w-32 transition-transform active:scale-95 ${isSelected ? "scale-105" : "opacity-80"}`}
             >
               <PlayerCard

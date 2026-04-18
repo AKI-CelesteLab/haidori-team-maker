@@ -1,6 +1,19 @@
 import {StaticImageData} from "next/image";
 
-export const categoryList = ["ユニフォーム", "妖", "3周年", "格ゲー"] as const;
+export const categoryList = [
+  "ユニフォーム",
+  "制服",
+  "夏祭り",
+  "１周年",
+  "王冠",
+  "ジャージ",
+  "遊園地",
+  "妖",
+  "ハロウィン",
+  "和装体験",
+  "3周年",
+  "格ゲー",
+] as const;
 export type Category = (typeof categoryList)[number];
 
 export const schoolList = [
