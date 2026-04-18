@@ -1,15 +1,4 @@
-import hinata_shouyou_iconic_img from "@/assets/KARASUNO/hinata_shouyou.png";
-import kageyama_tobio_iconic_img from "@/assets/KARASUNO/kageyama_tobio.png";
-import tsukishima_kei_iconic_img from "@/assets/KARASUNO/tsukishima_kei.png";
-import yamaguchi_tadashi_iconic_img from "@/assets/KARASUNO/yamaguchi_tadashi.png";
-import nishinoya_yu_iconic_img from "@/assets/KARASUNO/nishinoya_yu.png";
-import tanaka_ryunosuke_iconic_img from "@/assets/KARASUNO/tanaka_ryunosuke.png";
-import sawamura_daichi_iconic_img from "@/assets/KARASUNO/sawamura_daichi.png";
-import sugawara_koushi_iconic_img from "@/assets/KARASUNO/sugawara_koushi.png";
-import azumane_asahi_iconic_img from "@/assets/KARASUNO/azumane_asahi.png";
-import ennoshita_chikara_iconic_img from "@/assets/KARASUNO/ennoshita_chikara.png";
-import kinoshita_hisashi_iconic_img from "@/assets/KARASUNO/kinoshita_hisashi.png";
-import narita_kazuhito_iconic_img from "@/assets/KARASUNO/narita_kazuhito.png";
+import * as KarasunoImg from "./KARASUNO";
 
 import {PlayerData} from "@/types/PlayerData";
 
@@ -21,7 +10,7 @@ export const initialMembers: PlayerData[] = [
     position: "WS",
     type: "チョキ",
     class: "アイコニック",
-    image: sawamura_daichi_iconic_img,
+    image: KarasunoImg.sawamura,
   },
   {
     name: "東峰旭",
@@ -30,7 +19,7 @@ export const initialMembers: PlayerData[] = [
     position: "WS",
     type: "チョキ",
     class: "アイコニック",
-    image: azumane_asahi_iconic_img,
+    image: KarasunoImg.azumane,
   },
   {
     name: "月島蛍",
@@ -39,7 +28,7 @@ export const initialMembers: PlayerData[] = [
     position: "MB",
     type: "チョキ",
     class: "アイコニック",
-    image: tsukishima_kei_iconic_img,
+    image: KarasunoImg.tsukishima,
   },
   {
     name: "影山飛雄",
@@ -48,7 +37,7 @@ export const initialMembers: PlayerData[] = [
     position: "S",
     type: "チョキ",
     class: "アイコニック",
-    image: kageyama_tobio_iconic_img,
+    image: KarasunoImg.kageyama,
   },
   {
     name: "田中龍之介",
@@ -57,7 +46,7 @@ export const initialMembers: PlayerData[] = [
     position: "WS",
     type: "パー",
     class: "アイコニック",
-    image: tanaka_ryunosuke_iconic_img,
+    image: KarasunoImg.tanaka,
   },
   {
     name: "日向翔陽",
@@ -66,7 +55,7 @@ export const initialMembers: PlayerData[] = [
     position: "MB",
     type: "チョキ",
     class: "アイコニック",
-    image: hinata_shouyou_iconic_img,
+    image: KarasunoImg.hinata,
   },
   {
     name: "西谷夕",
@@ -75,7 +64,7 @@ export const initialMembers: PlayerData[] = [
     position: "Li",
     type: "チョキ",
     class: "アイコニック",
-    image: nishinoya_yu_iconic_img,
+    image: KarasunoImg.nishinoya,
   },
   {
     name: "山口忠",
@@ -84,7 +73,7 @@ export const initialMembers: PlayerData[] = [
     position: "MB",
     type: "パー",
     class: "アイコニック",
-    image: yamaguchi_tadashi_iconic_img,
+    image: KarasunoImg.yamaguchi,
   },
   {
     name: "菅原孝支",
@@ -93,7 +82,7 @@ export const initialMembers: PlayerData[] = [
     position: "S",
     type: "パー",
     class: "アイコニック",
-    image: sugawara_koushi_iconic_img,
+    image: KarasunoImg.sugawara,
   },
   {
     name: "縁下力",
@@ -102,9 +91,8 @@ export const initialMembers: PlayerData[] = [
     position: "WS",
     type: "パー",
     class: "アイコニック",
-    image: ennoshita_chikara_iconic_img,
+    image: KarasunoImg.ennoshita,
   },
-  // 木下久志
   {
     name: "木下久志",
     category: "ユニフォーム",
@@ -112,9 +100,8 @@ export const initialMembers: PlayerData[] = [
     position: "WS",
     type: "パー",
     class: "アイコニック",
-    image: kinoshita_hisashi_iconic_img,
+    image: KarasunoImg.kinoshita,
   },
-  // 成田一仁
   {
     name: "成田一仁",
     category: "ユニフォーム",
@@ -122,6 +109,6 @@ export const initialMembers: PlayerData[] = [
     position: "MB",
     type: "パー",
     class: "アイコニック",
-    image: narita_kazuhito_iconic_img,
+    image: KarasunoImg.narita,
   },
 ];
