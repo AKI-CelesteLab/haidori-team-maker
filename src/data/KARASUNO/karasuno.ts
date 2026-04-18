@@ -212,7 +212,7 @@ export const karasuno: PlayerData[] = [
     "【王冠】影山飛雄",
     "王冠",
     "S",
-    "チョキ",
+    "グー",
     "スーパーアイコニック",
     KarasunoImg.kageyama_crown_supericonic,
   ),
