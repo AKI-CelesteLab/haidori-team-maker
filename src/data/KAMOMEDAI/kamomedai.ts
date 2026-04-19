@@ -1,15 +1,33 @@
-import * as KamomedaiImg from "./index";
+import * as Img from "./index";
 
-import {PlayerData} from "@/types/PlayerData";
+import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
+import {StaticImageData} from "next/image";
+
+const createPlayer = (
+  name: string,
+  category: Category,
+  position: Position,
+  type: Type,
+  rarity: Class,
+  image: StaticImageData,
+): PlayerData => ({
+  name: name,
+  category: category,
+  school: "鴎台高校",
+  position: position,
+  type: type,
+  class: rarity,
+  image: image,
+});
 
 export const kamomedai: PlayerData[] = [
-  {
-    name: "【格ゲー】星海光来",
-    category: "格ゲー",
-    school: "鴎台高校",
-    position: "WS",
-    type: "パー",
-    class: "アイコニック",
-    image: KamomedaiImg.hoshiumi_fightinggame,
-  },
+  // 星海光来
+  createPlayer(
+    "【格ゲー】星海光来",
+    "格ゲー",
+    "WS",
+    "パー",
+    "アイコニック",
+    Img.hoshiumi_fightinggame,
+  ),
 ];

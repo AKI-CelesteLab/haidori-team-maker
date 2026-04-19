@@ -1,9 +1,9 @@
-import {StaticImageData} from "next/image";
-import * as KarasunoImg from "./index";
+import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
+import {StaticImageData} from "next/image";
 
-const createKarasunoPlayer = (
+const createPlayer = (
   name: string,
   category: Category,
   position: Position,
@@ -22,318 +22,318 @@ const createKarasunoPlayer = (
 
 export const karasuno: PlayerData[] = [
   // 日向翔陽
-  createKarasunoPlayer(
+  createPlayer(
     "日向翔陽",
     "ユニフォーム",
     "MB",
     "チョキ",
     "アイコニック",
-    KarasunoImg.hinata,
+    Img.hinata,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【制服】日向翔陽",
     "制服",
     "MB",
     "チョキ",
     "アイコニック",
-    KarasunoImg.hinata_uniform,
+    Img.hinata_uniform,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【夏祭り】日向翔陽",
     "夏祭り",
     "MB",
     "グー",
     "アイコニック",
-    KarasunoImg.hinata_summerfestival,
+    Img.hinata_summerfestival,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【１周年】日向翔陽",
     "１周年",
     "MB",
     "パー",
     "アイコニック",
-    KarasunoImg.hinata_1st,
+    Img.hinata_1st,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【王冠】日向翔陽",
     "王冠",
     "MB",
     "チョキ",
     "アイコニック",
-    KarasunoImg.hinata_crown,
+    Img.hinata_crown,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【ジャージ】日向翔陽",
     "ジャージ",
     "MB",
     "グー",
     "アイコニック",
-    KarasunoImg.hinata_jersey,
+    Img.hinata_jersey,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【遊園地】日向翔陽",
     "遊園地",
     "MB",
     "パー",
     "アイコニック",
-    KarasunoImg.hinata_amusementpark,
+    Img.hinata_amusementpark,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【ハロウィン】日向翔陽",
     "ハロウィン",
     "MB",
     "チョキ",
     "アイコニック",
-    KarasunoImg.hinata_halloween,
+    Img.hinata_halloween,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【和装体験】日向翔陽",
     "和装体験",
     "MB",
     "グー",
     "アイコニック",
-    KarasunoImg.hinata_wasoutaiken,
+    Img.hinata_wasoutaiken,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【格ゲー】日向翔陽",
     "格ゲー",
     "MB",
     "パー",
     "アイコニック",
-    KarasunoImg.hinata_fightinggame,
+    Img.hinata_fightinggame,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "日向翔陽",
     "ユニフォーム",
     "MB",
     "チョキ",
     "スーパーアイコニック",
-    KarasunoImg.hinata_supericonic,
+    Img.hinata_supericonic,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【王冠】日向翔陽",
     "王冠",
     "MB",
     "チョキ",
     "スーパーアイコニック",
-    KarasunoImg.hinata_crown_supericonic,
+    Img.hinata_crown_supericonic,
   ),
 
   // 影山飛雄
-  createKarasunoPlayer(
+  createPlayer(
     "影山飛雄",
     "ユニフォーム",
     "S",
     "チョキ",
     "アイコニック",
-    KarasunoImg.kageyama,
+    Img.kageyama,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【制服】影山飛雄",
     "制服",
     "S",
     "チョキ",
     "アイコニック",
-    KarasunoImg.kageyama_uniform,
+    Img.kageyama_uniform,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【夏祭り】影山飛雄",
     "夏祭り",
     "S",
     "グー",
     "アイコニック",
-    KarasunoImg.kageyama_summerfestival,
+    Img.kageyama_summerfestival,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【Xmas】影山飛雄",
     "Xmas",
     "S",
     "パー",
     "アイコニック",
-    KarasunoImg.kageyama_xmas,
+    Img.kageyama_xmas,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【１周年】影山飛雄",
     "１周年",
     "S",
     "チョキ",
     "アイコニック",
-    KarasunoImg.kageyama_1st,
+    Img.kageyama_1st,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【王冠】影山飛雄",
     "王冠",
     "S",
     "グー",
     "アイコニック",
-    KarasunoImg.kageyama_crown,
+    Img.kageyama_crown,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【ジャージ】影山飛雄",
     "ジャージ",
     "S",
     "パー",
     "アイコニック",
-    KarasunoImg.kageyama_jersey,
+    Img.kageyama_jersey,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【２周年】影山飛雄",
     "２周年",
     "S",
     "チョキ",
     "アイコニック",
-    KarasunoImg.kageyama_2nd,
+    Img.kageyama_2nd,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【中学生】影山飛雄",
     "中学生",
     "S",
     "グー",
     "アイコニック",
-    KarasunoImg.kageyama_middleschool,
+    Img.kageyama_middleschool,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【文化祭３】影山飛雄",
     "文化祭３",
     "S",
     "パー",
     "アイコニック",
-    KarasunoImg.kageyama_culturefestival3,
+    Img.kageyama_culturefestival3,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【格ゲー】影山飛雄",
     "格ゲー",
     "S",
     "チョキ",
     "アイコニック",
-    KarasunoImg.kageyama_fightinggame,
+    Img.kageyama_fightinggame,
   ),
-  createKarasunoPlayer(
+  createPlayer(
     "【王冠】影山飛雄",
     "王冠",
     "S",
     "グー",
     "スーパーアイコニック",
-    KarasunoImg.kageyama_crown_supericonic,
+    Img.kageyama_crown_supericonic,
   ),
 
   // 月島蛍
-  createKarasunoPlayer(
+  createPlayer(
     "月島蛍",
     "ユニフォーム",
     "MB",
     "チョキ",
     "アイコニック",
-    KarasunoImg.tsukishima,
+    Img.tsukishima,
   ),
 
   // 山口忠
-  createKarasunoPlayer(
+  createPlayer(
     "山口忠",
     "ユニフォーム",
     "MB",
     "パー",
     "アイコニック",
-    KarasunoImg.yamaguchi,
+    Img.yamaguchi,
   ),
 
   // 西谷夕
-  createKarasunoPlayer(
+  createPlayer(
     "西谷夕",
     "ユニフォーム",
     "Li",
     "チョキ",
     "アイコニック",
-    KarasunoImg.nishinoya,
+    Img.nishinoya,
   ),
 
   // 田中龍之介
-  createKarasunoPlayer(
+  createPlayer(
     "田中龍之介",
     "ユニフォーム",
     "WS",
     "パー",
     "アイコニック",
-    KarasunoImg.tanaka,
+    Img.tanaka,
   ),
 
   // 澤村大地
-  createKarasunoPlayer(
+  createPlayer(
     "澤村大地",
     "ユニフォーム",
     "WS",
     "チョキ",
     "アイコニック",
-    KarasunoImg.sawamura,
+    Img.sawamura,
   ),
 
   // 菅原孝支
-  createKarasunoPlayer(
+  createPlayer(
     "菅原孝支",
     "ユニフォーム",
     "S",
     "パー",
     "アイコニック",
-    KarasunoImg.sugawara,
+    Img.sugawara,
   ),
 
   // 東峰旭
-  createKarasunoPlayer(
+  createPlayer(
     "東峰旭",
     "ユニフォーム",
     "WS",
     "チョキ",
     "アイコニック",
-    KarasunoImg.azumane,
+    Img.azumane,
   ),
 
   // 縁下力
-  createKarasunoPlayer(
+  createPlayer(
     "縁下力",
     "ユニフォーム",
     "WS",
     "パー",
     "アイコニック",
-    KarasunoImg.ennoshita,
+    Img.ennoshita,
   ),
 
   // 木下久志
-  createKarasunoPlayer(
+  createPlayer(
     "木下久志",
     "ユニフォーム",
     "WS",
     "パー",
     "アイコニック",
-    KarasunoImg.kinoshita,
+    Img.kinoshita,
   ),
 
   // 成田一仁
-  createKarasunoPlayer(
+  createPlayer(
     "成田一仁",
     "ユニフォーム",
     "MB",
     "パー",
     "アイコニック",
-    KarasunoImg.narita,
+    Img.narita,
   ),
 
   // 清水潔子
-  createKarasunoPlayer(
+  createPlayer(
     "【格ゲー】清水潔子",
     "格ゲー",
     "MB",
     "グー",
     "アイコニック",
-    KarasunoImg.shimizu_fightinggame,
+    Img.shimizu_fightinggame,
   ),
 
   // 谷地仁花
-  createKarasunoPlayer(
+  createPlayer(
     "【格ゲー】谷地仁花",
     "格ゲー",
     "MB",
     "グー",
     "アイコニック",
-    KarasunoImg.yachi_fightinggame,
+    Img.yachi_fightinggame,
   ),
 ];

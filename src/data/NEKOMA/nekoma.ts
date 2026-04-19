@@ -1,15 +1,32 @@
-import kuroo_tetsurou_iconic_img from "@/assets/NEKOMA/kuro_tetsurou.png";
+import * as Img from "./index";
 
-import {PlayerData} from "@/types/PlayerData";
+import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
+import {StaticImageData} from "next/image";
+
+const createPlayer = (
+  name: string,
+  category: Category,
+  position: Position,
+  type: Type,
+  rarity: Class,
+  image: StaticImageData,
+): PlayerData => ({
+  name: name,
+  category: category,
+  school: "音駒高校",
+  position: position,
+  type: type,
+  class: rarity,
+  image: image,
+});
 
 export const nekoma: PlayerData[] = [
-  {
-    name: "黒尾鉄朗",
-    category: "ユニフォーム",
-    school: "音駒高校",
-    position: "MB",
-    type: "グー",
-    class: "アイコニック",
-    image: kuroo_tetsurou_iconic_img,
-  },
+  createPlayer(
+    "黒尾鉄朗",
+    "ユニフォーム",
+    "MB",
+    "グー",
+    "アイコニック",
+    Img.kuroo,
+  ),
 ];

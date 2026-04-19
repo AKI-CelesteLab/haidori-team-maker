@@ -1,14 +1,9 @@
-import akaashi_keigi_3rd_img from "@/assets/FUKUROUDANI/akaashi_keiji_3rd.png";
-import akaashi_keigi_ayakashi_supericonic_img from "@/assets/FUKUROUDANI/akaashi_keiji_ayakashi_supericonic.png";
-import bokuto_koutarou_3rd_img from "@/assets/FUKUROUDANI/bokuto_koutarou_3rd.png";
-import bokuto_koutarou_iconic_img from "@/assets/FUKUROUDANI/bokuto_koutarou.png";
-import komi_haruki_iconic_img from "@/assets/FUKUROUDANI/komi_haruki.png";
-import washio_tatsuki_iconic_img from "@/assets/FUKUROUDANI/washio_tatsuki.png";
+import * as Img from "./index";
 
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 import {StaticImageData} from "next/image";
 
-const createFukurouDaniPlayer = (
+const createPlayer = (
   name: string,
   category: Category,
   position: Position,
@@ -18,7 +13,7 @@ const createFukurouDaniPlayer = (
 ): PlayerData => ({
   name: name,
   category: category,
-  school: "烏野高校",
+  school: "梟谷学園高校",
   position: position,
   type: type,
   class: rarity,
@@ -26,58 +21,59 @@ const createFukurouDaniPlayer = (
 });
 
 export const fukuroudani: PlayerData[] = [
-  {
-    name: "【3周年】赤葦京治",
-    category: "3周年",
-    school: "梟谷学園高校",
-    position: "S",
-    type: "チョキ",
-    class: "アイコニック",
-    image: akaashi_keigi_3rd_img,
-  },
-  {
-    name: "【妖】赤葦京治",
-    category: "妖",
-    school: "梟谷学園高校",
-    position: "S",
-    type: "チョキ",
-    class: "スーパーアイコニック",
-    image: akaashi_keigi_ayakashi_supericonic_img,
-  },
-  {
-    name: "【3周年】木兎光太郎",
-    category: "3周年",
-    school: "梟谷学園高校",
-    position: "WS",
-    type: "チョキ",
-    class: "アイコニック",
-    image: bokuto_koutarou_3rd_img,
-  },
-  {
-    name: "木兎光太郎",
-    category: "ユニフォーム",
-    school: "梟谷学園高校",
-    position: "WS",
-    type: "パー",
-    class: "アイコニック",
-    image: bokuto_koutarou_iconic_img,
-  },
-  {
-    name: "小見春樹",
-    category: "ユニフォーム",
-    school: "梟谷学園高校",
-    position: "Li",
-    type: "パー",
-    class: "アイコニック",
-    image: komi_haruki_iconic_img,
-  },
-  {
-    name: "鷲尾辰生",
-    category: "ユニフォーム",
-    school: "梟谷学園高校",
-    position: "MB",
-    type: "パー",
-    class: "アイコニック",
-    image: washio_tatsuki_iconic_img,
-  },
+  // 木兎光太郎
+  createPlayer(
+    "木兎光太郎",
+    "ユニフォーム",
+    "WS",
+    "パー",
+    "アイコニック",
+    Img.bokuto,
+  ),
+  createPlayer(
+    "【3周年】木兎光太郎",
+    "3周年",
+    "WS",
+    "チョキ",
+    "アイコニック",
+    Img.bokuto_3rd,
+  ),
+
+  // 小見春樹
+  createPlayer(
+    "小見春樹",
+    "ユニフォーム",
+    "Li",
+    "パー",
+    "アイコニック",
+    Img.komi,
+  ),
+
+  // 鷲尾辰生
+  createPlayer(
+    "鷲尾辰生",
+    "ユニフォーム",
+    "MB",
+    "パー",
+    "アイコニック",
+    Img.washio,
+  ),
+
+  // 赤葦京治
+  createPlayer(
+    "【3周年】赤葦京治",
+    "3周年",
+    "S",
+    "チョキ",
+    "アイコニック",
+    Img.akaashi_3rd,
+  ),
+  createPlayer(
+    "【妖】赤葦京治",
+    "妖",
+    "S",
+    "チョキ",
+    "スーパーアイコニック",
+    Img.akaashi_ayakashi_supericonic,
+  ),
 ];
