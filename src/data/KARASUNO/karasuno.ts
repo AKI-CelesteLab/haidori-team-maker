@@ -230,7 +230,7 @@ export const karasuno: PlayerData[] = [
     "【水着】月島蛍",
     "水着",
     "MB",
-    "チョキ",
+    "グー",
     "アイコニック",
     Img.tsukishima_swimwear,
   ),
