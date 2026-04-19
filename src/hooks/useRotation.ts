@@ -285,6 +285,7 @@ export const useRotation = () => {
     setMembers((prev) => {
       // 1. 全体時計回りシフト (Index 11 -> 0)
       const next = [...prev.slice(1, 12), prev[0]];
+      setCounter((prev) => prev + 1);
       return next;
     });
   }, []);
@@ -296,19 +297,7 @@ export const useRotation = () => {
 
     // サーブの時にローテーション
     if (nextIsServe) {
-      if (counter === 0 && members[2].position === "Li") {
-        setMembers((prev) => {
-          const next = [...prev];
-          const temp = next[2];
-          next[2] = next[6];
-          next[6] = temp;
-          const target = next.splice(6, 1)[0];
-          next.push(target);
-          return next;
-        });
-      }
-      if (counter !== 0) rotate();
-      setCounter((prev) => prev + 1);
+      rotate();
     } else {
       setMembers((prev) => {
         const next = [...prev];
@@ -323,7 +312,7 @@ export const useRotation = () => {
         return next;
       });
     }
-  }, [members, isServe, counter, rotate]);
+  }, [isServe, rotate]);
 
   return {
     members,

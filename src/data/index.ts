@@ -6,11 +6,11 @@ import {fukuroudani} from "./FUKUROUDANI/fukuroudani";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
 
 export const PLAYER_LIST: PlayerData[] = [
-  ...karasuno,
-  ...nekoma,
-  ...shiratorizawa,
-  ...fukuroudani,
-  ...kamomedai,
+  ...karasuno, // 烏野
+  ...nekoma, // 音駒
+  ...shiratorizawa, // 白鳥沢
+  ...fukuroudani, // 梟谷
+  ...kamomedai, // 鴎台
 ];
 
 // import * as Img from "./index";
