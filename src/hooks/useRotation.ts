@@ -190,13 +190,13 @@ export const useRotation = () => {
         const isCourt = idx1 < 6 && idx2 < 6;
         const isBench = idx1 >= 6 && idx2 >= 6;
 
-        if (isStart && isLiSubstitute && !isCourt && !isBench) {
+        if (isStart && isLiSubstitute && (!isCourt || !isBench)) {
           if (!(idx1 > 5 && idx2 > 5)) {
             liSubCounter--;
             setLiSubstituteCounter(liSubCounter);
             if (liSubCounter >= 0) substitute();
           }
-        } else if (isStart && !isCourt && !isBench) {
+        } else if (isStart && (!isCourt || !isBench)) {
           subCounter--;
           setSubstituteCounter(subCounter);
           if (subCounter >= 0) substitute();
