@@ -37,6 +37,20 @@ export default function RotationTool() {
         {/* 1. 操作ボタン (高さを固定) */}
         <div className="shrink-0 space-y-1">
           <div className="flex justify-around items-center bg-gray-100 p-2 rounded-t-lg border-b">
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={isFirstServe}
+                onChange={changeFirstServe}
+                className="size-5"
+              />
+              <span className="font-bold text-sm">先行サーブ</span>
+            </label>
+            <span>
+              交代:{substituteCounter}/3 Li交代:{liSubstituteCounter}/3
+            </span>
+          </div>
+          <div className="flex justify-around items-center bg-gray-100 p-2 rounded-b-lg shadow-sm">
             <button
               onClick={toggleSimulate}
               className={
@@ -47,20 +61,6 @@ export default function RotationTool() {
             >
               {isStart ? "リセット" : "スタート"}
             </button>
-            <span>
-              交代:{substituteCounter}/3 Li交代:{liSubstituteCounter}/3
-            </span>
-          </div>
-          <div className="flex justify-around items-center bg-gray-100 p-2 rounded-b-lg shadow-sm">
-            <label className="flex items-center gap-2 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={isFirstServe}
-                onChange={changeFirstServe}
-                className="size-5"
-              />
-              <span className="font-bold text-sm">先行サーブ</span>
-            </label>
             <button
               onClick={nextRotate}
               className="bg-blue-600 text-white px-4 py-2 rounded-xl font-bold active:scale-95 transition text-sm"
