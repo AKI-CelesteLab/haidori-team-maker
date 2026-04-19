@@ -14,8 +14,10 @@ export default function RotationTool() {
     selectedAllName,
     isServe,
     isFirstServe,
-    confirmTeam,
-    reset,
+    isStart,
+    substituteCounter,
+    liSubstituteCounter,
+    toggleSimulate,
     toggleFilter,
     changeFirstServe,
     handlePlayerClick,
@@ -36,17 +38,18 @@ export default function RotationTool() {
         <div className="shrink-0 space-y-1">
           <div className="flex justify-around items-center bg-gray-100 p-2 rounded-t-lg border-b">
             <button
-              onClick={confirmTeam}
-              className="px-3 py-1.5 text-sm text-white bg-green-500 rounded-lg shadow-sm"
+              onClick={toggleSimulate}
+              className={
+                "px-3 py-1.5 text-sm text-white rounded-lg shadow-sm" +
+                " " +
+                (isStart ? "bg-red-500" : "bg-green-500")
+              }
             >
-              編成を固定
+              {isStart ? "リセット" : "スタート"}
             </button>
-            <button
-              onClick={reset}
-              className="px-3 py-1.5 text-sm text-white bg-red-400 rounded-lg shadow-sm"
-            >
-              リセット
-            </button>
+            <span>
+              交代:{substituteCounter}/3 Li交代:{liSubstituteCounter}/3
+            </span>
           </div>
           <div className="flex justify-around items-center bg-gray-100 p-2 rounded-b-lg shadow-sm">
             <label className="flex items-center gap-2 cursor-pointer">

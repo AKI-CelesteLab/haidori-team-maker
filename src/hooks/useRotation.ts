@@ -22,6 +22,10 @@ export const useRotation = () => {
     members[2] = serve
   */
 
+  const [isStart, setIsStart] = useState(false);
+  // 選手交代の回数の管理
+  const [substituteCounter, setSubstituteCounter] = useState(3);
+  const [liSubstituteCounter, setLiSubstituteCounter] = useState(3);
   const [team, setTeam] = useState<PlayerData[]>(initialMembers);
   const [members, setMembers] = useState<PlayerData[]>(team);
   // フィルタ用
@@ -68,19 +72,23 @@ export const useRotation = () => {
   const [counter, setCounter] = useState(0);
   const [selection, setSelection] = useState<Selection>(null);
 
-  // チームを確定
-  const confirmTeam = useCallback(() => {
-    setTeam(members);
-  }, [members]);
+  // シミュレーションの開始・リセット
+  const toggleSimulate = useCallback(() => {
+    const condition = !isStart;
+    setIsStart(condition);
 
-  // リセット
-  const reset = useCallback(() => {
-    setMembers(team);
-    setIsFirstServe(false);
-    setIsServe(false);
-    setCounter(0);
-    setSelection(null);
-  }, [team]);
+    if (condition) {
+      setTeam(members);
+    } else {
+      // リセット
+      setMembers(team);
+      setSubstituteCounter(3);
+      setLiSubstituteCounter(3);
+      setIsFirstServe(false);
+      setIsServe(false);
+      setCounter(0);
+    }
+  }, [isStart, members, team]);
 
   // フィルタの更新関数
   const toggleFilter = useCallback(
@@ -166,14 +174,38 @@ export const useRotation = () => {
       // 3. バリデーションを通過した場合のみStateを更新
       setMembers((prev) => {
         const next = [...prev];
-        const temp = next[idx1];
-        next[idx1] = next[idx2];
-        next[idx2] = temp;
+        const substitute = () => {
+          const temp = next[idx1];
+          next[idx1] = next[idx2];
+          next[idx2] = temp;
+        };
+
+        let subCounter = substituteCounter;
+        let liSubCounter = liSubstituteCounter;
+
+        const isLiSubstitute =
+          (p1.position === "Li" && idx1 > 5) ||
+          (p2.position === "Li" && idx2 > 5);
+
+        if (isStart && isLiSubstitute) {
+          if (!(idx1 > 5 && idx2 > 5)) {
+            liSubCounter--;
+            setLiSubstituteCounter(liSubCounter);
+            if (liSubCounter > 0) substitute();
+          }
+        } else if (isStart) {
+          subCounter--;
+          setSubstituteCounter(subCounter);
+          if (subCounter > 0) substitute();
+        } else {
+          substitute();
+        }
+
         return next;
       });
       setSelection(null);
     },
-    [members],
+    [isStart, substituteCounter, liSubstituteCounter, members],
   );
 
   // members（コート・ベンチ）がタップされた時
@@ -300,8 +332,10 @@ export const useRotation = () => {
     selectedAllName: selection?.type === "all" ? selection.data.name : null,
     isServe,
     isFirstServe,
-    confirmTeam,
-    reset,
+    isStart,
+    substituteCounter,
+    liSubstituteCounter,
+    toggleSimulate,
     toggleFilter,
     changeFirstServe,
     nextRotate,
