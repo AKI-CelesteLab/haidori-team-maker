@@ -1,16 +1,16 @@
 // 日向翔陽
-export {default as hinata} from "@/assets/KARASUNO/hinata_shouyou.png";
-export {default as hinata_uniform} from "@/assets/KARASUNO/hinata_shouyou_uniform.png";
-export {default as hinata_summerfestival} from "@/assets/KARASUNO/hinata_shouyou_summerfestival.png";
-export {default as hinata_1st} from "@/assets/KARASUNO/hinata_shouyou_1st.png";
-export {default as hinata_crown} from "@/assets/KARASUNO/hinata_shouyou_crown.png";
-export {default as hinata_jersey} from "@/assets/KARASUNO/hinata_shouyou_jersey.png";
-export {default as hinata_amusementpark} from "@/assets/KARASUNO/hinata_shouyou_amusementpark.png";
-export {default as hinata_halloween} from "@/assets/KARASUNO/hinata_shouyou_halloween.png";
-export {default as hinata_wasoutaiken} from "@/assets/KARASUNO/hinata_shouyou_wasoutaiken.png";
-export {default as hinata_fightinggame} from "@/assets/KARASUNO/hinata_shouyou_fightinggame.png";
-export {default as hinata_supericonic} from "@/assets/KARASUNO/hinata_shouyou_supericonic.png";
-export {default as hinata_crown_supericonic} from "@/assets/KARASUNO/hinata_shouyou_crown_supericonic.png";
+export {default as hinata} from "@/assets/KARASUNO/hinata_shoyo.png";
+export {default as hinata_uniform} from "@/assets/KARASUNO/hinata_shoyo_uniform.png";
+export {default as hinata_summerfestival} from "@/assets/KARASUNO/hinata_shoyo_summerfestival.png";
+export {default as hinata_1st} from "@/assets/KARASUNO/hinata_shoyo_1st.png";
+export {default as hinata_crown} from "@/assets/KARASUNO/hinata_shoyo_crown.png";
+export {default as hinata_jersey} from "@/assets/KARASUNO/hinata_shoyo_jersey.png";
+export {default as hinata_amusementpark} from "@/assets/KARASUNO/hinata_shoyo_amusementpark.png";
+export {default as hinata_halloween} from "@/assets/KARASUNO/hinata_shoyo_halloween.png";
+export {default as hinata_wasoutaiken} from "@/assets/KARASUNO/hinata_shoyo_wasoutaiken.png";
+export {default as hinata_fightinggame} from "@/assets/KARASUNO/hinata_shoyo_fightinggame.png";
+export {default as hinata_supericonic} from "@/assets/KARASUNO/hinata_shoyo_supericonic.png";
+export {default as hinata_crown_supericonic} from "@/assets/KARASUNO/hinata_shoyo_crown_supericonic.png";
 
 // 影山飛雄
 export {default as kageyama} from "@/assets/KARASUNO/kageyama_tobio.png";

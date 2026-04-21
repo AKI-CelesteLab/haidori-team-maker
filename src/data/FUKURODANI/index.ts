@@ -1,6 +1,6 @@
 // 木兎光太郎
-export {default as bokuto} from "@/assets/FUKUROUDANI/bokuto_koutarou.png";
-export {default as bokuto_3rd} from "@/assets/FUKUROUDANI/bokuto_koutarou_3rd.png";
+export {default as bokuto} from "@/assets/FUKUROUDANI/bokuto_kotaro.png";
+export {default as bokuto_3rd} from "@/assets/FUKUROUDANI/bokuto_kotaro_3rd.png";
 
 // 小見春樹
 export {default as komi} from "@/assets/FUKUROUDANI/komi_haruki.png";
