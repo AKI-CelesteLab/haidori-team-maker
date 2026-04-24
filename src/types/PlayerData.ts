@@ -45,7 +45,7 @@ export const categoryList = [
   "文化祭３", // culturefestival3
   "Xmas3", // xmas3
   "寝正月", // lyinglow
-  "和装体験", // wasoutaiken
+  "和装体験", // wasotaiken
   "3周年", // 3rd
   "格ゲー", // fightinggame
 ] as const;

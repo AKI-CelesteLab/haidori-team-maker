@@ -7,7 +7,7 @@ export {default as hinata_crown} from "@/assets/KARASUNO/hinata_shoyo_crown.png"
 export {default as hinata_jersey} from "@/assets/KARASUNO/hinata_shoyo_jersey.png";
 export {default as hinata_amusementpark} from "@/assets/KARASUNO/hinata_shoyo_amusementpark.png";
 export {default as hinata_halloween} from "@/assets/KARASUNO/hinata_shoyo_halloween.png";
-export {default as hinata_wasoutaiken} from "@/assets/KARASUNO/hinata_shoyo_wasoutaiken.png";
+export {default as hinata_wasotaiken} from "@/assets/KARASUNO/hinata_shoyo_wasotaiken.png";
 export {default as hinata_fightinggame} from "@/assets/KARASUNO/hinata_shoyo_fightinggame.png";
 export {default as hinata_supericonic} from "@/assets/KARASUNO/hinata_shoyo_supericonic.png";
 export {default as hinata_crown_supericonic} from "@/assets/KARASUNO/hinata_shoyo_crown_supericonic.png";
@@ -83,7 +83,7 @@ export {default as azumane} from "@/assets/KARASUNO/azumane_asahi.png";
 export {default as azumane_poolcleaning} from "@/assets/KARASUNO/azumane_asahi_poolcleaning.png";
 export {default as azumane_survivalgame} from "@/assets/KARASUNO/azumane_asahi_survivalgame.png";
 export {default as azumane_summerfestival2} from "@/assets/KARASUNO/azumane_asahi_summerfestival2.png";
-export {default as azumane_wasoutaiken} from "@/assets/KARASUNO/azumane_asahi_wasoutaiken.png";
+export {default as azumane_wasotaiken} from "@/assets/KARASUNO/azumane_asahi_wasotaiken.png";
 
 // 縁下力
 export {default as ennoshita} from "@/assets/KARASUNO/ennoshita_chikara.png";

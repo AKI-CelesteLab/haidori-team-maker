@@ -92,7 +92,7 @@ export const karasuno: PlayerData[] = [
     "MB",
     "グー",
     "アイコニック",
-    Img.hinata_wasoutaiken,
+    Img.hinata_wasotaiken,
   ),
   createPlayer(
     "【格ゲー】日向翔陽",
@@ -588,7 +588,7 @@ export const karasuno: PlayerData[] = [
     "WS",
     "グー",
     "アイコニック",
-    Img.azumane_wasoutaiken,
+    Img.azumane_wasotaiken,
   ),
 
   // 縁下力
