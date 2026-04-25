@@ -68,7 +68,7 @@ export const nekoma: PlayerData[] = [
     "S",
     "チョキ",
     "アイコニック",
-    Img.kozume_uniform,
+    Img.kozume_xmas2,
   ),
   createPlayer(
     "【中学生】狐爪研磨",
