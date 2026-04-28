@@ -6,12 +6,14 @@ import {fukurodani} from "./FUKURODANI/fukurodani";
 import {kamomedai} from "./KAMOMEDAI/kamomedai";
 import {dateko} from "./DATEKO/dateko";
 import {seijoh} from "./SEIJOH/seijoh";
+import {tokonami} from "./TOKONAMI/tokonami";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
   ...nekoma, // 音駒
   ...dateko, // 伊達工
   ...seijoh, // 青葉城西
+  ...tokonami, // 常波
   ...shiratorizawa, // 白鳥沢
   ...fukurodani, // 梟谷
   ...kamomedai, // 鴎台
