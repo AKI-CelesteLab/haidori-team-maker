@@ -1,14 +1,15 @@
 import {PlayerData} from "@/types/PlayerData";
 import {karasuno} from "./KARASUNO/karasuno";
 import {nekoma} from "./NEKOMA/nekoma";
-import {shiratorizawa} from "./SHIRATORIZAWA/shiratorizawa";
-import {fukurodani} from "./FUKURODANI/fukurodani";
-import {kamomedai} from "./KAMOMEDAI/kamomedai";
 import {dateko} from "./DATEKO/dateko";
 import {seijoh} from "./SEIJOH/seijoh";
 import {tokonami} from "./TOKONAMI/tokonami";
 import {ogiminami} from "./OGIMINAMI/ogiminami";
 import {kakugawa} from "./KAKUGAWA/kakugawa";
+import {jozenji} from "./JOZENJI/jozenji";
+import {shiratorizawa} from "./SHIRATORIZAWA/shiratorizawa";
+import {fukurodani} from "./FUKURODANI/fukurodani";
+import {kamomedai} from "./KAMOMEDAI/kamomedai";
 
 export const PLAYER_LIST: PlayerData[] = [
   ...karasuno, // 烏野
@@ -18,6 +19,7 @@ export const PLAYER_LIST: PlayerData[] = [
   ...tokonami, // 常波
   ...ogiminami, // 扇南
   ...kakugawa, // 角川
+  ...jozenji, // 条善寺
   ...shiratorizawa, // 白鳥沢
   ...fukurodani, // 梟谷
   ...kamomedai, // 鴎台
