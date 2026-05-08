@@ -174,6 +174,14 @@ export const fukurodani: PlayerData[] = [
     "アイコニック",
     Img.onaga,
   ),
+  createPlayer(
+    "尾長渉",
+    "ユニフォーム",
+    "MB",
+    "パー",
+    "スーパーアイコニック",
+    Img.onaga_supericonic,
+  ),
 
   // 鷲尾辰生
   createPlayer(

@@ -37,6 +37,7 @@ export {default as kita_newyear2} from "@/assets/INARIZAKI/kita_shinsuke_newyear
 export {default as kita_jobshadowing2} from "@/assets/INARIZAKI/kita_shinsuke_jobshadowing2.png";
 export {default as kita_uniform} from "@/assets/INARIZAKI/kita_shinsuke_uniform.png";
 export {default as kita_wasotaiken} from "@/assets/INARIZAKI/kita_shinsuke_wasotaiken.png";
+export {default as kita_memories} from "@/assets/INARIZAKI/kita_shinsuke_memories.png";
 
 // 尾白アラン
 export {default as ojiro} from "@/assets/INARIZAKI/ojiro_aran.png";

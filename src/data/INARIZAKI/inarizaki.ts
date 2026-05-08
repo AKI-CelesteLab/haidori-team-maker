@@ -277,6 +277,14 @@ export const inarizaki: PlayerData[] = [
     "アイコニック",
     Img.kita_wasotaiken,
   ),
+  createPlayer(
+    "【思い出】北信介",
+    "思い出",
+    "WS",
+    "グー",
+    "アイコニック",
+    Img.kita_memories,
+  ),
 
   // 尾白アラン
   createPlayer(

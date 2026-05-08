@@ -25,6 +25,7 @@ export {default as komi_rojiura2} from "@/assets/FUKURODANI/komi_haruki_rojiura2
 
 // 尾長渉
 export {default as onaga} from "@/assets/FUKURODANI/onaga_wataru.png";
+export {default as onaga_supericonic} from "@/assets/FUKURODANI/onaga_wataru_supericonic.png";
 
 // 鷲尾辰生
 export {default as washio} from "@/assets/FUKURODANI/washio_tatsuki.png";
