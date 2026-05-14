@@ -298,6 +298,14 @@ export const karasuno: PlayerData[] = [
     "アイコニック",
     Img.tsukishima_lyinglow,
   ),
+  createPlayer(
+    "【思い出】月島蛍",
+    "思い出",
+    "MB",
+    "グー",
+    "アイコニック",
+    Img.tsukishima_memories,
+  ),
 
   // 山口忠
   createPlayer(
@@ -347,6 +355,14 @@ export const karasuno: PlayerData[] = [
     "グー",
     "アイコニック",
     Img.yamaguchi_yakiimo,
+  ),
+  createPlayer(
+    "【思い出】山口忠",
+    "思い出",
+    "MB",
+    "パー",
+    "アイコニック",
+    Img.yamaguchi_memories,
   ),
 
   // 西谷夕

@@ -37,6 +37,7 @@ export {default as tsukishima_2nd} from "@/assets/KARASUNO/tsukishima_kei_2nd.pn
 export {default as tsukishima_art2} from "@/assets/KARASUNO/tsukishima_kei_art2.png";
 export {default as tsukishima_yakiimo} from "@/assets/KARASUNO/tsukishima_kei_yakiimo.png";
 export {default as tsukishima_lyinglow} from "@/assets/KARASUNO/tsukishima_kei_lyinglow.png";
+export {default as tsukishima_memories} from "@/assets/KARASUNO/tsukishima_kei_memories.png";
 
 // 山口忠
 export {default as yamaguchi} from "@/assets/KARASUNO/yamaguchi_tadashi.png";
@@ -45,6 +46,7 @@ export {default as yamaguchi_playingsnow} from "@/assets/KARASUNO/yamaguchi_tada
 export {default as yamaguchi_spy} from "@/assets/KARASUNO/yamaguchi_tadashi_spy.png";
 export {default as yamaguchi_jersey} from "@/assets/KARASUNO/yamaguchi_tadashi_jersey.png";
 export {default as yamaguchi_yakiimo} from "@/assets/KARASUNO/yamaguchi_tadashi_yakiimo.png";
+export {default as yamaguchi_memories} from "@/assets/KARASUNO/yamaguchi_tadashi_memories.png";
 
 // 西谷夕
 export {default as nishinoya} from "@/assets/KARASUNO/nishinoya_yu.png";
