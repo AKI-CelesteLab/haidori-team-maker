@@ -2,22 +2,39 @@ import {PLAYER_LIST} from "@/data";
 import {PlayerData} from "@/types/PlayerData";
 
 const PARAM_KEY = "t";
+const BASE62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+const HASH_LEN = 4;
+
+function playerHash(p: PlayerData): string {
+  const str = p.name + p.class;
+  let h = 5381;
+  for (let i = 0; i < str.length; i++) {
+    h = Math.imul(h, 33) ^ str.charCodeAt(i);
+    h = h >>> 0;
+  }
+  let result = "";
+  for (let i = 0; i < HASH_LEN; i++) {
+    result = BASE62[h % 62] + result;
+    h = Math.floor(h / 62);
+  }
+  return result;
+}
+
+const HASH_MAP: Map<string, PlayerData> = new Map(
+  PLAYER_LIST.map((p) => [playerHash(p), p]),
+);
 
 export function encodeTeam(members: PlayerData[]): string {
-  const indices = members.map((m) =>
-    PLAYER_LIST.findIndex((p) => p.name === m.name && p.class === m.class),
-  );
-  if (indices.some((i) => i === -1)) return "";
-  return indices.join(",");
+  return members.map(playerHash).join(",");
 }
 
 export function decodeTeam(param: string): PlayerData[] | null {
   try {
-    const indices = param.split(",").map(Number);
-    if (indices.length !== 12) return null;
-    const members = indices.map((i) => PLAYER_LIST[i]);
+    const keys = param.split(",");
+    if (keys.length !== 12) return null;
+    const members = keys.map((k) => HASH_MAP.get(k));
     if (members.some((m) => m === undefined)) return null;
-    return members;
+    return members as PlayerData[];
   } catch {
     return null;
   }
