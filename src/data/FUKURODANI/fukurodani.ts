@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -83,6 +82,14 @@ export const fukurodani: PlayerData[] = [
     "チョキ",
     "アイコニック",
     "/assets/FUKURODANI/bokuto_kotaro_3rd.png",
+  ),
+  createPlayer(
+    "【梅雨2】木兎光太郎",
+    "梅雨2",
+    "WS",
+    "グー",
+    "アイコニック",
+    "/assets/FUKURODANI/bokuto_kotaro_rainyseason2.png",
   ),
 
   // 木葉秋紀

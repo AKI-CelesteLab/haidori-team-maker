@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -207,6 +206,14 @@ export const seijoh: PlayerData[] = [
     "パー",
     "アイコニック",
     "/assets/SEIJOH/kindaichi_yutaro_middleschool.png",
+  ),
+  createPlayer(
+    "【カンフー】金田一勇太郎",
+    "カンフー",
+    "MB",
+    "グー",
+    "スーパーアイコニック",
+    "/assets/SEIJOH/kindaichi_yutaro_kungfu_supericonic.png",
   ),
 
   // 京谷賢太郎

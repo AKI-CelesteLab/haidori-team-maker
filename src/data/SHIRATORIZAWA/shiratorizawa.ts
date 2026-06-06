@@ -91,6 +91,14 @@ export const shiratorizawa: PlayerData[] = [
     "アイコニック",
     "/assets/SHIRATORIZAWA/ushijima_wakatoshi_3rd.png",
   ),
+  createPlayer(
+    "【3周年】牛島若利",
+    "梅雨2",
+    "WS",
+    "グー",
+    "アイコニック",
+    "/assets/SHIRATORIZAWA/ushijima_wakatoshi_rainyseason2.png",
+  ),
 
   // 天童覚
   createPlayer(
