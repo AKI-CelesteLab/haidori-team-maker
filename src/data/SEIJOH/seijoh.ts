@@ -173,6 +173,14 @@ export const seijoh: PlayerData[] = [
     "アイコニック",
     "/assets/SEIJOH/iwaizumi_hajime_xmas3.png",
   ),
+  createPlayer(
+    "【梅雨2】岩泉一",
+    "梅雨2",
+    "WS",
+    "パー",
+    "アイコニック",
+    "/assets/SEIJOH/iwaizumi_hajime_rainyseason2.png",
+  ),
 
   // 金田一勇太郎
   createPlayer(
@@ -298,6 +306,14 @@ export const seijoh: PlayerData[] = [
     "チョキ",
     "アイコニック",
     "/assets/SEIJOH/kunimi_akira_lyinglow.png",
+  ),
+  createPlayer(
+    "【梅雨2】国見英",
+    "梅雨2",
+    "WS",
+    "グー",
+    "アイコニック",
+    "/assets/SEIJOH/kunimi_akira_rainyseason2.png",
   ),
 
   // 渡親治

@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -111,5 +110,13 @@ export const tokonami: PlayerData[] = [
     "グー",
     "アイコニック",
     "/assets/TOKONAMI/ikejiri_hayato_amusementpark.png",
+  ),
+  createPlayer(
+    "【遊園地】池尻隼人",
+    "遊園地",
+    "WS",
+    "グー",
+    "スーパーアイコニック",
+    "/assets/TOKONAMI/ikejiri_hayato_amusementpark_supericonic.png",
   ),
 ];

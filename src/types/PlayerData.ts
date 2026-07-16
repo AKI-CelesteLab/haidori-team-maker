@@ -49,6 +49,7 @@ export const categoryList = [
   "格ゲー", // fightinggame
   "思い出", // memories
   "梅雨2", // rainyseason2
+  "勉強会", // studygroup
 ] as const;
 export type Category = (typeof categoryList)[number];
 

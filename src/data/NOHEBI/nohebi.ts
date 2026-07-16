@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -51,6 +50,22 @@ export const nohebi: PlayerData[] = [
     "パー",
     "アイコニック",
     "/assets/NOHEBI/daisho_suguru_ayakashi.png",
+  ),
+  createPlayer(
+    "【梅雨2】大将優",
+    "梅雨2",
+    "WS",
+    "チョキ",
+    "アイコニック",
+    "/assets/NOHEBI/daisho_suguru_rainyseason2.png",
+  ),
+  createPlayer(
+    "【妖】大将優",
+    "妖",
+    "WS",
+    "パー",
+    "スーパーアイコニック",
+    "/assets/NOHEBI/daisho_suguru_ayakashi_supericonic.png",
   ),
 
   // 沼井和馬

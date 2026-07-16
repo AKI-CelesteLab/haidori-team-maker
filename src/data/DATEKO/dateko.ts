@@ -309,4 +309,12 @@ export const dateko: PlayerData[] = [
     "アイコニック",
     "/assets/DATEKO/sasaya_takehito.png",
   ),
+  createPlayer(
+    "【梅雨2】笹谷武仁",
+    "梅雨2",
+    "WS",
+    "パー",
+    "アイコニック",
+    "/assets/DATEKO/sasaya_takehito_rainyseason2.png",
+  ),
 ];

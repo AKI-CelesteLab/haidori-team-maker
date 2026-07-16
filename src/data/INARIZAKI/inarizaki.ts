@@ -305,6 +305,14 @@ export const inarizaki: PlayerData[] = [
     "アイコニック",
     "/assets/INARIZAKI/kita_shinsuke_memories.png",
   ),
+  createPlayer(
+    "【勉強会】北信介",
+    "勉強会",
+    "WS",
+    "パー",
+    "アイコニック",
+    "/assets/INARIZAKI/kita_shinsuke_studygroup.png",
+  ),
 
   // 尾白アラン
   createPlayer(

@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -35,6 +34,14 @@ export const kakugawa: PlayerData[] = [
     "パー",
     "アイコニック",
     "/assets/KAKUGAWA/komaki_yuzuru_playingsnow.png",
+  ),
+  createPlayer(
+    "【勉強会】古牧譲",
+    "勉強会",
+    "S",
+    "チョキ",
+    "アイコニック",
+    "/assets/KAKUGAWA/komaki_yuzuru_studygroup.png",
   ),
 
   // 浅虫快人

@@ -307,6 +307,14 @@ export const shiratorizawa: PlayerData[] = [
     "アイコニック",
     "/assets/SHIRATORIZAWA/oohira_reon_fightinggame.png",
   ),
+  createPlayer(
+    "大平獅音",
+    "ユニフォーム",
+    "WS",
+    "グー",
+    "スーパーアイコニック",
+    "/assets/SHIRATORIZAWA/oohira_reon_supericonic.png",
+  ),
 
   // 川西太一
   createPlayer(

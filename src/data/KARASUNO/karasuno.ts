@@ -303,6 +303,14 @@ export const karasuno: PlayerData[] = [
     "アイコニック",
     "/assets/KARASUNO/tsukishima_kei_memories.png",
   ),
+  createPlayer(
+    "【勉強会】月島蛍",
+    "勉強会",
+    "MB",
+    "パー",
+    "アイコニック",
+    "/assets/KARASUNO/tsukishima_kei_studygroup.png",
+  ),
 
   // 山口忠
   createPlayer(
@@ -576,6 +584,14 @@ export const karasuno: PlayerData[] = [
     "グー",
     "アイコニック",
     "/assets/KARASUNO/sugawara_koushi_summerfestival2.png",
+  ),
+  createPlayer(
+    "【勉強会】菅原孝支",
+    "勉強会",
+    "S",
+    "パー",
+    "アイコニック",
+    "/assets/KARASUNO/sugawara_koushi_studygroup.png",
   ),
 
   // 東峰旭

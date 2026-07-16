@@ -1,4 +1,3 @@
-
 import {Category, Class, PlayerData, Position, Type} from "@/types/PlayerData";
 
 const createPlayer = (
@@ -248,6 +247,14 @@ export const nekoma: PlayerData[] = [
     "アイコニック",
     "/assets/NEKOMA/haiba_lev_survivalgame2.png",
   ),
+  createPlayer(
+    "【勉強会】灰羽リエーフ",
+    "勉強会",
+    "MB",
+    "チョキ",
+    "アイコニック",
+    "/assets/NEKOMA/haiba_lev_studygroup.png",
+  ),
 
   // 夜久衛輔
   createPlayer(
@@ -298,6 +305,14 @@ export const nekoma: PlayerData[] = [
     "アイコニック",
     "/assets/NEKOMA/yaku_morisuke_xmas3.png",
   ),
+  createPlayer(
+    "【梅雨2】夜久衛輔",
+    "梅雨2",
+    "Li",
+    "パー",
+    "アイコニック",
+    "/assets/NEKOMA/yaku_morisuke_rainyseason2.png",
+  ),
 
   // 福永招平
   createPlayer(
@@ -341,6 +356,14 @@ export const nekoma: PlayerData[] = [
     "チョキ",
     "アイコニック",
     "/assets/NEKOMA/inuoka_so_newyear.png",
+  ),
+  createPlayer(
+    "【梅雨2】犬岡走",
+    "梅雨2",
+    "MB",
+    "グー",
+    "アイコニック",
+    "/assets/NEKOMA/inuoka_so_rainyseason2.png",
   ),
 
   // 山本猛虎
@@ -388,7 +411,14 @@ export const nekoma: PlayerData[] = [
   ),
 
   // 海信行
-  createPlayer("海信行", "ユニフォーム", "WS", "パー", "アイコニック", "/assets/NEKOMA/kai_nobuyuki.png"),
+  createPlayer(
+    "海信行",
+    "ユニフォーム",
+    "WS",
+    "パー",
+    "アイコニック",
+    "/assets/NEKOMA/kai_nobuyuki.png",
+  ),
   createPlayer(
     "【遊園地】海信行",
     "遊園地",

@@ -133,6 +133,14 @@ export const fukurodani: PlayerData[] = [
     "アイコニック",
     "/assets/FUKURODANI/konoha_akinori_swimwear2.png",
   ),
+  createPlayer(
+    "【勉強会】木葉秋紀",
+    "勉強会",
+    "WS",
+    "グー",
+    "アイコニック",
+    "/assets/FUKURODANI/konoha_akinori_studygroup.png",
+  ),
 
   // 猿杙大和
   createPlayer(
@@ -278,6 +286,14 @@ export const fukurodani: PlayerData[] = [
     "チョキ",
     "アイコニック",
     "/assets/FUKURODANI/akaashi_keiji_3rd.png",
+  ),
+  createPlayer(
+    "【勉強会】赤葦京治",
+    "勉強会",
+    "S",
+    "グー",
+    "アイコニック",
+    "/assets/FUKURODANI/akaashi_keiji_studygroup.png",
   ),
   createPlayer(
     "【妖】赤葦京治",
